@@ -20,7 +20,7 @@ resource "google_compute_subnetwork" "with_flow_logs" {
 
 resource "google_compute_subnetwork" "commit" {
     #checkov:skip=CKV_GCP_26:test_vpc
-  name          = "app-subnet"
+  name          = "app-subnet-3"
   ip_cidr_range = "10.0.1.0/24"
   region        = "asia-east1"
   network       = "projects/demo/global/networks/vpc"
