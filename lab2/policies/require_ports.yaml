@@ -1,0 +1,10 @@
+metadata:
+  id: "CKV2_MY_GCP_1"
+  name: "Ensure firewall allow rules explicitly declare ports"
+  category: "NETWORKING"
+definition:
+  cond_type: attribute
+  resource_types:
+    - google_compute_firewall
+  attribute: allow.ports
+  operator: exists
